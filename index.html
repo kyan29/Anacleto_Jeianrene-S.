@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grid-container">
+
+    <div class="navbar">
+      <div id="logo">My Portfolio</div>
+      <button id="menu-btn" aria-label="Open menu">&#9776;</button>
+      <ul id="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="image-section">
+      <img src="download.jpg" alt="Profile Picture">
+    </div>
+
+    <div class="text-section">
+      <ul>
+        <li class="intro">Hi! I am</li>
+        <li class="name"><strong>Jeianrene S. Anacleto</strong></li>
+        <li class="role">3rd Year BS Information Technology Student</li>
+        <li class="quote">"It always seems impossible until its done."</li>
+      </ul>
+    </div>
+    
+    <div class="footer"></div>
+
+  </div>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const navList = document.getElementById('nav-list');
+    menuBtn.addEventListener('click', () => {
+      navList.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
